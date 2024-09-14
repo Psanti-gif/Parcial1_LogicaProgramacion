@@ -141,7 +141,7 @@ internal class Program
             Console.WriteLine($"La Comisión fue de: {dinero_com}");
             Console.WriteLine(" ");
 
-            prom_com = prom_com = ((comision * (valor_v1)) / 100) ;
+            prom_com = ((comision * (valor_v1)) / 100) ;
             Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
             Console.WriteLine(" ");
