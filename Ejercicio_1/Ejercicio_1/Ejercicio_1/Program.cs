@@ -3,7 +3,7 @@
  ¿Cuál es el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones?
  ¿Cuál fue la venta que le generó la mayor comisión?
  ¿Cuál fue el promedio de las comisiones que recibió por cada venta?
-Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el objetivo del mes. El objetivo es sumar en las 3 ventas como
+Además, la empresa da un beneficio extra de $100.000 si el vendedor supera el objetivo del mes. El objetivo es sumar en las 3 ventas como mínimo $1.000.000 en ventas. Mostrar un mensaje donde indique si ganó o no el beneficio.
 */
 internal class Program
 {
