@@ -37,28 +37,38 @@
             Console.WriteLine(" ");
 
             if (comision * (valor_v1) > comision * (valor_v2) && comision * (valor_v1) > comision * (valor_v3)) {
-                Console.WriteLine("La Comisión mas grande fue la primera con un valor total a: "+ comision * (valor_v1)/100);
+                Console.WriteLine(" ");
+                Console.WriteLine("La Venta con mayor comision fue la primera con un valor total de comision a: " + comision * (valor_v1)/100);
+                Console.WriteLine(" ");
             }
             else if (comision * (valor_v2) > comision * (valor_v1) && comision * (valor_v2) > comision * (valor_v3))
             {
-                Console.WriteLine("La Comisión mas grande fue la segunda con un valor total a: " + comision * (valor_v2) / 100);
+                Console.WriteLine(" ");
+                Console.WriteLine("La Venta con mayor comision fue la segunda con un valor total de comision a: " + comision * (valor_v2) / 100);
+                Console.WriteLine(" ");
             }
             else if (comision * (valor_v3) > comision * (valor_v1) && comision * (valor_v3) > comision * (valor_v2))
             {
-                Console.WriteLine("La Comisión mas grande fue la tercera con un valor total a: " + comision * (valor_v3) / 100);
+                Console.WriteLine(" ");
+                Console.WriteLine("La Venta con mayor comision fue la tercera con un valor total de comision a : " + comision * (valor_v3) / 100);
+                Console.WriteLine(" ");
             }
 
 
             prom_com = comision * (valor_v1) + comision * (valor_v2) + comision * (valor_v3) / 3;
+            Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
             if (valor_TotalV >= 1000000) 
-            { 
+            {
+                Console.WriteLine(" ");
                 Console.Write($"Eres beneficiario al completar en las tres ventas un total de: {valor_TotalV} ");
                 Console.WriteLine(" ");
 
+                Console.WriteLine(" ");
                 sueldo_total = valor_TotalV + dinero_com + beneficio;
                 Console.Write($"Tu Dinero total seria de: {sueldo_total}");
-                
+                Console.WriteLine(" ");
+
             }
 
 
@@ -81,20 +91,26 @@
             Console.Write($"El dinero obtenido por comisiones fue de: {dinero_com}");
             Console.WriteLine(" ");
 
+            Console.WriteLine(" ");
             prom_com = comision * (valor_v1) + comision * (valor_v2) / 2;
+            Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
             if (comision * (valor_v1) > comision * (valor_v2))
             {
                 Console.WriteLine(" ");
-                Console.WriteLine("La Comisión mas grande fue la primera con un valor total a: " + comision * (valor_v1) / 100);
+                Console.WriteLine("La Venta con mayor comision fue la primera con un valor total a comision a: " + comision * (valor_v1) / 100);
                 Console.WriteLine(" ");
             }
             else if (comision * (valor_v2) > comision * (valor_v1))
             {
-                Console.WriteLine("La Comisión mas grande fue la segunda con un valor total a: " + comision * (valor_v2) / 100);
+                Console.WriteLine(" ");
+                Console.WriteLine("La Venta con mayor comision fue la segunda con un valor total de comision a: " + comision * (valor_v2) / 100);
                 Console.WriteLine(" ");
             }
-          
+
+            sueldo_total = valor_TotalV + dinero_com;
+            Console.Write($"Tu Dinero total seria de: {sueldo_total}");
+            Console.WriteLine(" ");
 
         }
         else if (Numventas == 1)
@@ -105,10 +121,21 @@
             valor_TotalV = valor_v1;
             Console.WriteLine($"El valor total de las venta ha sido de: {valor_TotalV} ");
 
+            Console.WriteLine(" ");
             dinero_com = (comision * (valor_v1))/100;
-            Console.Write($"El dinero obtenido por comisiones fue de: {dinero_com}");
+            Console.WriteLine($"El dinero obtenido por comisiones fue de: {dinero_com}");
+            Console.WriteLine(" ");
+
+            Console.WriteLine($"La Comisión fue de: {dinero_com}");
+            Console.WriteLine(" ");
 
             prom_com = comision * (valor_v1);
+            Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
+
+            Console.WriteLine(" ");
+            sueldo_total = valor_TotalV + dinero_com;
+            Console.Write($"Tu Dinero total seria de: {sueldo_total}");
+            Console.WriteLine(" ");
         }
         else
         {
