@@ -2,12 +2,14 @@
 class Program
 {
     static void Main()
-    { 
+    {
+        double a, b;
+        double x;
         Console.Write("Introduce el coeficiente a: ");
-        double a = Convert.ToDouble(Console.ReadLine());
+        a = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Introduce el coeficiente b: ");
-        double b = Convert.ToDouble(Console.ReadLine());
+        b = Convert.ToDouble(Console.ReadLine());
 
         if (a == 0)
         {
@@ -22,7 +24,7 @@ class Program
         }
         else
         {
-            double x = -b / a;
+            x = -b / a;
             Console.WriteLine($"La solución es: x = {x}");
         }
 
