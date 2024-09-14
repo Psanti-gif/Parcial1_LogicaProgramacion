@@ -2,38 +2,59 @@
 {
     private static void Main(string[] args)
     {
-        double sueldo,valor_v,valor_TotalV;
+        double sueldo, valor_v1, valor_v2, valor_v3, valor_TotalV,dinero_com;
         int Numventas;
         double beneficio = 0;
-        double comision = 10;
+        const float comision = 10;
 
         Console.Write("Ingrese su Sueldo Base: $");
-        sueldo=Convert.ToDouble(Console.ReadLine());
+        sueldo = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Ingrese Cantidad de ventas: ");
         Numventas = Convert.ToInt32(Console.ReadLine());
 
-
-        if (Numventas < 0)
+        if (Numventas == 3)
         {
-            Console.Write("La cantidad de ventas no puede ser negativa, ingrese nuevamente las ventas realizadas: ");
-            Numventas = Convert.ToInt32(Console.ReadLine());
-
-        }
-        else if (Numventas > 3)
-        {
-            Console.Write("El Máximo de ventas posibles a realizar para acceder al beneficio es de 3");
             beneficio = 100000;
+            Console.Write("Ingrese el valor de la primer venta: $");
+            valor_v1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Ingrese el valor de la segunda venta: $");
+            valor_v2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Ingrese el valor de la tercera venta: $");
+            valor_v3 = Convert.ToDouble(Console.ReadLine());
+
+            valor_TotalV = valor_v1 + valor_v2 + valor_v3;
+            Console.WriteLine($"El valor total de las ventas ha sido de: {valor_TotalV} ");
+
+            dinero_com = comision * (valor_v1) + comision * (valor_v2) + comision * (valor_v3);
         }
-        else if (Numventas == 3)
+        else if (Numventas == 2)
         {
+            Console.Write("Ingrese el valor de la primer venta: $");
+            valor_v1 = Convert.ToDouble(Console.ReadLine());
 
-            beneficio = 100000;
-            Console.Write($"Por la cantidad de ventas realizadas la empresa te dara un beneficio de: ${beneficio}");
+            Console.Write("Ingrese el valor de la segunda venta: $");
+            valor_v2 = Convert.ToDouble(Console.ReadLine());
+
+            valor_TotalV = valor_v1 + valor_v2;
+            Console.WriteLine($"El valor total de las ventas ha sido de: {valor_TotalV} ");
+        }
+        else if (Numventas == 1)
+        {
+            Console.Write("Ingrese el valor de la unica venta: $");
+            valor_v1 = Convert.ToDouble(Console.ReadLine());
+
+            valor_TotalV = valor_v1;
+            Console.WriteLine($"El valor total de las venta ha sido de: {valor_TotalV} ");
+        }
+        else
+        {
+            Console.WriteLine("Error al Ingresar Cantidad");
         }
 
-        Console.Write("Ingrese el valor de la venta: $");
-        valor_v = Convert.ToDouble(Console.ReadLine());
+        
 
     }
 }
