@@ -65,14 +65,19 @@ internal class Program
             prom_com = comision * (valor_v1) + comision * (valor_v2) + comision * (valor_v3) / 3;
             Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
-            if (valor_TotalV >= 1000000) 
+            Console.WriteLine(" ");
+            sueldo_total = sueldo + valor_TotalV + dinero_com;
+            Console.Write($"Tu Dinero total seria de: {sueldo_total}");
+            Console.WriteLine(" ");
+
+            if (valor_TotalV >= 1000000)
             {
                 Console.WriteLine(" ");
                 Console.Write($"Eres beneficiario al completar en las tres ventas un total de: {valor_TotalV} ");
                 Console.WriteLine(" ");
 
                 Console.WriteLine(" ");
-                sueldo_total = valor_TotalV + dinero_com + beneficio;
+                sueldo_total = sueldo + valor_TotalV + dinero_com + beneficio;
                 Console.Write($"Tu Dinero total seria de: {sueldo_total}");
                 Console.WriteLine(" ");
 
@@ -115,7 +120,7 @@ internal class Program
                 Console.WriteLine(" ");
             }
 
-            sueldo_total = valor_TotalV + dinero_com;
+            sueldo_total = sueldo + valor_TotalV + dinero_com;
             Console.Write($"Tu Dinero total seria de: {sueldo_total}");
             Console.WriteLine(" ");
 
@@ -140,7 +145,7 @@ internal class Program
             Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
             Console.WriteLine(" ");
-            sueldo_total = valor_TotalV + dinero_com;
+            sueldo_total = sueldo + valor_TotalV + dinero_com;
             Console.Write($"Tu Dinero total seria de: {sueldo_total}");
             Console.WriteLine(" ");
         }
