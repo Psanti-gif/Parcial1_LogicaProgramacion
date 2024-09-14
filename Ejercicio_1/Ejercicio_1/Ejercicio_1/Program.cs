@@ -62,7 +62,7 @@ internal class Program
             }
 
 
-            prom_com = comision * (valor_v1) + comision * (valor_v2) + comision * (valor_v3) / 3;
+            prom_com =( (comision * (valor_v1))/100 + (comision * (valor_v2)) / 100 + (comision * (valor_v3)) / 100) / 3;
             Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
             Console.WriteLine(" ");
@@ -104,7 +104,7 @@ internal class Program
             Console.WriteLine(" ");
 
             Console.WriteLine(" ");
-            prom_com = comision * (valor_v1) + comision * (valor_v2) / 2;
+            prom_com = ((comision * (valor_v1)) / 100 + (comision * (valor_v2)) / 100) / 3;
             Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
             if (comision * (valor_v1) > comision * (valor_v2))
@@ -141,7 +141,7 @@ internal class Program
             Console.WriteLine($"La Comisión fue de: {dinero_com}");
             Console.WriteLine(" ");
 
-            prom_com = comision * (valor_v1);
+            prom_com = prom_com = ((comision * (valor_v1)) / 100) ;
             Console.WriteLine($"El promedio de las comisiones fue de: {prom_com} ");
 
             Console.WriteLine(" ");
